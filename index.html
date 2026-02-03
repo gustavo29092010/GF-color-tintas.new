@@ -104,7 +104,7 @@
     <div class="hero-blob w-64 h-64 bg-yellow-400 bottom-0 left-1/3" style="animation-delay: -4s;"></div>
     <div class="relative max-w-7xl mx-auto px-4 text-center"><span class="inline-block px-4 py-2 bg-orange-100 text-orange-600 rounded-full text-sm font-medium mb-6"> ✨ Mais de 2.000 cores disponíveis </span>
      <h2 class="text-4xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">Descubra a cor perfeita<br><span class="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 bg-clip-text text-transparent"> para seu projeto </span></h2>
-     <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">Tintas de alta qualidade para paredes, madeiras, metais e muito mais. Transforme seus ambientes com cores vibrantes e duradouras.</p><!-- Color Preview Circles -->
+     <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">Explore nossa ampla paleta de cores e encontre a tonalidade ideal para cada superfície. Mais de 2.000 opções de cores com informações técnicas completas.</p><!-- Color Preview Circles -->
      <div class="flex justify-center gap-3 mb-8">
       <div class="w-12 h-12 rounded-full bg-red-500 shadow-lg shadow-red-500/30 hover:scale-110 transition-transform cursor-pointer"></div>
       <div class="w-12 h-12 rounded-full bg-orange-500 shadow-lg shadow-orange-500/30 hover:scale-110 transition-transform cursor-pointer"></div>
@@ -154,11 +154,11 @@
       </div>
       <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-shadow">
        <div class="w-16 h-16 rounded-2xl bg-purple-100 flex items-center justify-center mb-6">
-        <svg width="32" height="32" viewbox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2" /> <path d="M16 8h4a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H6" /> <circle cx="5" cy="18" r="2" /> <circle cx="15" cy="18" r="2" />
+        <svg width="32" height="32" viewbox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /> <polyline points="14 2 14 8 20 8" /> <line x1="16" y1="13" x2="8" y2="13" /> <line x1="16" y1="17" x2="8" y2="17" /> <polyline points="10 9 9 9 8 9" />
         </svg>
        </div>
-       <h4 class="text-xl font-bold text-gray-900 mb-3">Entrega Rápida</h4>
-       <p class="text-gray-600">Entregamos em toda a região com agilidade. Compras acima de R$200 têm frete grátis.</p>
+       <h4 class="text-xl font-bold text-gray-900 mb-3">Catálogo Digital</h4>
+       <p class="text-gray-600">Acesse todas as informações técnicas e veja as cores reais antes de escolher.</p>
       </div>
      </div>
     </div>
@@ -226,26 +226,26 @@
   <script>
     // Product data
     const products = [
-      { id: 1, name: "Branco Neve", code: "#FFFFFF", category: "parede", price: "R$ 89,90", finish: "Fosco", brand: "Premium" },
-      { id: 2, name: "Coral Vibrante", code: "#FF6B6B", category: "parede", price: "R$ 94,90", finish: "Acetinado", brand: "Premium" },
-      { id: 3, name: "Azul Oceano", code: "#4ECDC4", category: "parede", price: "R$ 99,90", finish: "Brilhante", brand: "Premium" },
-      { id: 4, name: "Verde Floresta", code: "#2D5016", category: "parede", price: "R$ 92,90", finish: "Fosco", brand: "Econômica" },
-      { id: 5, name: "Amarelo Sol", code: "#FFE66D", category: "parede", price: "R$ 87,90", finish: "Acetinado", brand: "Econômica" },
-      { id: 6, name: "Rosa Quartzo", code: "#F7B7A3", category: "parede", price: "R$ 95,90", finish: "Acetinado", brand: "Premium" },
-      { id: 7, name: "Cinza Urbano", code: "#6B7280", category: "parede", price: "R$ 85,90", finish: "Fosco", brand: "Econômica" },
-      { id: 8, name: "Roxo Ametista", code: "#9333EA", category: "especial", price: "R$ 129,90", finish: "Brilhante", brand: "Premium" },
-      { id: 9, name: "Mogno Natural", code: "#8B4513", category: "madeira", price: "R$ 115,90", finish: "Acetinado", brand: "Premium" },
-      { id: 10, name: "Carvalho Claro", code: "#DEB887", category: "madeira", price: "R$ 109,90", finish: "Acetinado", brand: "Premium" },
-      { id: 11, name: "Nogueira", code: "#5D4037", category: "madeira", price: "R$ 112,90", finish: "Fosco", brand: "Premium" },
-      { id: 12, name: "Cedro Rosado", code: "#BC8F8F", category: "madeira", price: "R$ 118,90", finish: "Brilhante", brand: "Premium" },
-      { id: 13, name: "Prata Metálico", code: "#C0C0C0", category: "metal", price: "R$ 145,90", finish: "Brilhante", brand: "Industrial" },
-      { id: 14, name: "Grafite Escuro", code: "#374151", category: "metal", price: "R$ 139,90", finish: "Fosco", brand: "Industrial" },
-      { id: 15, name: "Dourado Imperial", code: "#FFD700", category: "metal", price: "R$ 165,90", finish: "Brilhante", brand: "Premium" },
-      { id: 16, name: "Bronze Antigo", code: "#CD7F32", category: "metal", price: "R$ 155,90", finish: "Acetinado", brand: "Premium" },
-      { id: 17, name: "Efeito Mármore", code: "#F5F5DC", category: "especial", price: "R$ 189,90", finish: "Texturizado", brand: "Artístico" },
-      { id: 18, name: "Glitter Prata", code: "#E8E8E8", category: "especial", price: "R$ 175,90", finish: "Cintilante", brand: "Artístico" },
-      { id: 19, name: "Camurça", code: "#C19A6B", category: "especial", price: "R$ 159,90", finish: "Aveludado", brand: "Artístico" },
-      { id: 20, name: "Lousa Magnética", code: "#1F2937", category: "especial", price: "R$ 199,90", finish: "Magnético", brand: "Funcional" }
+      { id: 1, name: "Branco Neve", code: "#FFFFFF", category: "parede", finish: "Fosco", brand: "Premium", coverage: "12m²/L" },
+      { id: 2, name: "Coral Vibrante", code: "#FF6B6B", category: "parede", finish: "Acetinado", brand: "Premium", coverage: "12m²/L" },
+      { id: 3, name: "Azul Oceano", code: "#4ECDC4", category: "parede", finish: "Brilhante", brand: "Premium", coverage: "10m²/L" },
+      { id: 4, name: "Verde Floresta", code: "#2D5016", category: "parede", finish: "Fosco", brand: "Econômica", coverage: "11m²/L" },
+      { id: 5, name: "Amarelo Sol", code: "#FFE66D", category: "parede", finish: "Acetinado", brand: "Econômica", coverage: "11m²/L" },
+      { id: 6, name: "Rosa Quartzo", code: "#F7B7A3", category: "parede", finish: "Acetinado", brand: "Premium", coverage: "12m²/L" },
+      { id: 7, name: "Cinza Urbano", code: "#6B7280", category: "parede", finish: "Fosco", brand: "Econômica", coverage: "11m²/L" },
+      { id: 8, name: "Roxo Ametista", code: "#9333EA", category: "especial", finish: "Brilhante", brand: "Premium", coverage: "10m²/L" },
+      { id: 9, name: "Mogno Natural", code: "#8B4513", category: "madeira", finish: "Acetinado", brand: "Premium", coverage: "14m²/L" },
+      { id: 10, name: "Carvalho Claro", code: "#DEB887", category: "madeira", finish: "Acetinado", brand: "Premium", coverage: "14m²/L" },
+      { id: 11, name: "Nogueira", code: "#5D4037", category: "madeira", finish: "Fosco", brand: "Premium", coverage: "13m²/L" },
+      { id: 12, name: "Cedro Rosado", code: "#BC8F8F", category: "madeira", finish: "Brilhante", brand: "Premium", coverage: "13m²/L" },
+      { id: 13, name: "Prata Metálico", code: "#C0C0C0", category: "metal", finish: "Brilhante", brand: "Industrial", coverage: "15m²/L" },
+      { id: 14, name: "Grafite Escuro", code: "#374151", category: "metal", finish: "Fosco", brand: "Industrial", coverage: "15m²/L" },
+      { id: 15, name: "Dourado Imperial", code: "#FFD700", category: "metal", finish: "Brilhante", brand: "Premium", coverage: "12m²/L" },
+      { id: 16, name: "Bronze Antigo", code: "#CD7F32", category: "metal", finish: "Acetinado", brand: "Premium", coverage: "13m²/L" },
+      { id: 17, name: "Efeito Mármore", code: "#F5F5DC", category: "especial", finish: "Texturizado", brand: "Artístico", coverage: "8m²/L" },
+      { id: 18, name: "Glitter Prata", code: "#E8E8E8", category: "especial", finish: "Cintilante", brand: "Artístico", coverage: "9m²/L" },
+      { id: 19, name: "Camurça", code: "#C19A6B", category: "especial", finish: "Aveludado", brand: "Artístico", coverage: "10m²/L" },
+      { id: 20, name: "Lousa Magnética", code: "#1F2937", category: "especial", finish: "Magnético", brand: "Funcional", coverage: "8m²/L" }
     ];
 
     // Default configuration
@@ -272,7 +272,7 @@
       
       grid.innerHTML = filtered.map((product, index) => `
         <div class="color-card bg-white rounded-2xl overflow-hidden shadow-sm fade-in" style="animation-delay: ${index * 0.05}s" data-id="${product.id}">
-          <div class="h-40 relative" style="background-color: ${product.code}">
+          <div class="h-48 relative" style="background-color: ${product.code}">
             <div class="absolute top-3 right-3 px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-medium text-gray-700">
               ${product.brand}
             </div>
@@ -281,31 +281,26 @@
             </div>
           </div>
           <div class="p-5">
-            <h4 class="font-bold text-gray-900 mb-1">${product.name}</h4>
-            <p class="text-sm text-gray-500 mb-3">Acabamento: ${product.finish}</p>
-            <div class="flex items-center justify-between">
-              <span class="text-lg font-bold text-orange-500">${product.price}</span>
-              <button class="add-to-cart px-4 py-2 bg-gray-900 text-white text-sm font-medium rounded-lg hover:bg-gray-800 transition-colors">
-                + Carrinho
-              </button>
+            <h4 class="font-bold text-gray-900 mb-2 text-lg">${product.name}</h4>
+            <div class="space-y-1 text-sm text-gray-600">
+              <div class="flex items-center gap-2">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                </svg>
+                <span>Acabamento: <strong>${product.finish}</strong></span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                </svg>
+                <span>Rendimento: <strong>${product.coverage}</strong></span>
+              </div>
             </div>
           </div>
         </div>
       `).join("");
 
-      // Add cart button listeners
-      document.querySelectorAll(".add-to-cart").forEach(btn => {
-        btn.addEventListener("click", function() {
-          this.textContent = "✓ Adicionado";
-          this.classList.remove("bg-gray-900", "hover:bg-gray-800");
-          this.classList.add("bg-green-500");
-          setTimeout(() => {
-            this.textContent = "+ Carrinho";
-            this.classList.remove("bg-green-500");
-            this.classList.add("bg-gray-900", "hover:bg-gray-800");
-          }, 2000);
-        });
-      });
+
     }
 
     // Category filter
@@ -379,5 +374,5 @@
     // Initial render
     renderProducts();
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9c852e5e025402df',t:'MTc3MDE1NTgxNi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9c853972802502df',t:'MTc3MDE1NjI3MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
